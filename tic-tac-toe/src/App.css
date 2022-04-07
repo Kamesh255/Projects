@@ -55,5 +55,15 @@
     background-color: black;
     color: white;
   }
+  .popUp{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background-color: white;
+    z-index: 1;
+    width: fit-content;
+    padding: 30px;
+    color: black;
+  }
  
  

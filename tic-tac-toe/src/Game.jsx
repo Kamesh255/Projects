@@ -1,11 +1,13 @@
 import React from "react";
 import react, { useEffect, useState } from "react";
 import Squer from "./Squer";
+import PopUpWinner from "./PopUpWinner"
 import "./App.css";
 
 const Game = () => {
   const [gameState, setGameState] = useState( "","","","","","","","","");
   const [chance, setChance] = useState(false);
+  const [name, setName] = useState(null);
   const onSquerClick = (index) => {
     let string = Array.from(gameState);
     string[index] = chance ? "x" : "o";
@@ -15,7 +17,7 @@ const Game = () => {
   useEffect(() => {
     const winner = checkWinner();
     if (winner) {
-      alert(`Ta da ! ${winner} has winn the game`);
+      setName(winner);
       setGameState("");
     }
   }, [gameState]);
@@ -44,7 +46,12 @@ const Game = () => {
   };
   return (
     <>
+    <div>
+
       <h1 className="text">Tic-Tac-Toe</h1>
+      <div> 
+      { name == null ? null : <PopUpWinner name={name}/> }
+     </div>
       <div className="row jc-center">
         <Squer
           className="b-bottom-right"
@@ -92,9 +99,10 @@ const Game = () => {
         />
         <Squer state={gameState[8]} onClick={() => onSquerClick(8)} />
       </div>
-      <button className="btn" onClick={() => setGameState("")}>
+      <button className="btn" onClick={() => {setGameState("");setName(null)}}>
         Clear Game
       </button>
+    </div>
     </>
   );
 };
