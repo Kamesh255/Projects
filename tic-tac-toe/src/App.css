@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  display:  flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: rgb(86, 20, 20);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.text{
+  color: black;
+  font-style: italic;
+}
+.row{
+  display: flex;
+  flex-direction:  row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.jc-center{
+  justify-content: center;
+}
+.squer { 
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: skyblue;
+  font-weight: bolder;
+   padding:30px;
+  }
+  .squer:hover{
+    background-color: rgb(3, 3, 3);
+  }
+  .b-bottom-right{
+    border-right: 15px solid skyblue;
+    border-bottom:  15px solid skyblue ;
+  }
+  .b-bottom{
+    border-bottom: 15px solid skyblue  ;
+  }
+  .b-right{
+    border-right: 15px solid skyblue  ;
+  } 
+  .btn{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px; 
+  }
+  .btn:hover{
+    background-color: black;
+    color: white;
+  }
+ 
+ 
