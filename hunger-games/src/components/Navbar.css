@@ -1,0 +1,51 @@
+.navbar {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+}
+
+.navbar>h2 {
+    margin: 5px;
+}
+
+.navbar>button {
+    margin: 10px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(242, 253, 239);
+    color: black;
+    border: 0.1px solid grey;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        position: fixed;
+    }
+
+    .navbar>button {
+        margin: 10px auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 70px;
+        padding: 5px 8px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}

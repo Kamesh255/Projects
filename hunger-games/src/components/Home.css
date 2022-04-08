@@ -1,73 +1,20 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.main{
+.card_container {
     display: grid;
     grid-template-columns: 48% 48%;
     gap: 20px;
-    background-color: #F3F3F3;
-    margin: auto;
-}
-.show{
-    background-color: white;
-    border-radius: 5px;
-}
-.food_box{
-    display: grid;
-    grid-template-columns: 20% 50% 20% ;
-    gap: 10px;
-    padding: 5px; 
-}
-.img{
-    margin-top: 10px;
-    width: 100%;
-    height: 80%;
-    border-radius: 7%;
-}
-.deatil{
-    height: 150px;
-    text-align: left; 
-}
-.vots{ 
-    margin-top: 10px;
-    display:flex;
-    flex-direction: column; 
-    justify-content: right;
-    align-items: flex-end;
-    text-align: right;
-}  
- .stars{
-    background-color: #72A02B;
-    color: white;
-    font-weight: 900;
-    width:40px;
-    padding: 2px;
-    border-radius: 5px;
-    text-align: center;   
-}
-.gray{
-    color: rgb(118, 117, 117);
-    font-weight: 500;
-    font-size: medium;
-}
-.black{
-font-weight: 500;
-}
-.order{
-    border: 1px solid rgb(161, 161, 161);
-    padding: 5px;
-    border-radius:  5px ;
-    text-align: right;
-}
-.order_btn{
-    display: flex;
-    flex-direction: row; 
-    align-items: flex-end;
-    width: fit-content;
-    background-color: #E9F4EC;
-    padding: 5px; 
-    color: green;
+    margin: 20px auto;
 }
 
- 
+.container-2 {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+@media (max-width: 960px) {
+    .card_container {
+        display: grid;
+        grid-template-columns: 98%;
+        gap: 20px;
+        margin: 20px auto;
+    }
+}
