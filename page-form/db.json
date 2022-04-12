@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "name": "Kamesh Hedau",
+      "age": "23",
+      "dateOfBirth": "1998-11-07",
+      "stateOfResidence": "Madhya Pradesh",
+      "address": "Behind Ganesh temple, bhairoganj",
+      "pincode": "480661",
+      "id": 1
+    } 
+  ]
+}
