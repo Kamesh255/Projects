@@ -8,6 +8,15 @@
       "address": "Behind Ganesh temple, bhairoganj",
       "pincode": "480661",
       "id": 1
-    } 
+    },
+    {
+      "name": "Arpit",
+      "age": "25",
+      "dateOfBirth": "1996-07-10",
+      "stateOfResidence": "Madhya Pradesh",
+      "address": "bhpoal",
+      "pincode": "256956",
+      "id": 2
+    }
   ]
 }
