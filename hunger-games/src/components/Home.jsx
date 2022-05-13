@@ -117,7 +117,7 @@ const Home = () => {
   //Pagination code
   let per_page = 6;
   let [page, setPage] = useState(1);
-  const display_card = (arr) => {
+  const display_card = (arr) => { 
     let start = (page - 1) * per_page;
     let end = start + per_page;
     return arr.slice(start, end);
