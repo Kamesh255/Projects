@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from "axios"
 
 const UseAuth = (code) => {
@@ -9,14 +9,14 @@ const UseAuth = (code) => {
         axios
         .post('http://localhost:3001/login',{
             code,
-        }).then(res => {
+        }).then(res => { 
             setAccessToken(res.data.accessToken)
             setRefreshToken(res.data.refreshToken)
             setExpiresIn(res.data.expiresIn)
             window.history.pushState({},null,"/")
         }).catch((err)=>{
-            // console.log(err)
-            window.location = "/"
+            console.log(err)
+            // window.location = "/"
         })
     },[code])
     useEffect(()=>{
