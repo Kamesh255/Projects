@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TrackSearchResult = ({ track }) => {
+const TrackSearchResult = ({ track,chooseTrack}) => {
     const handelPlay=()=>{
-        // chooseTrack(track)
+        chooseTrack(track)
     }
   return (
     <div className='d-flex m-2 align-items-center' style={{cursor:"pointer"}} onClick={handelPlay}  >
